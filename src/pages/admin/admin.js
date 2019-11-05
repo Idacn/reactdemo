@@ -1,6 +1,6 @@
 import React from "react";
-import { Layout, Menu, Icon } from 'antd';
-import CustomSlider from "../../components/customSlider/customSlider";
+import { Layout} from "antd";
+import CustomSlider from '../../components/customSlider/customSlider'
 const { Header, Content, Footer, Sider } = Layout;
 class Admin extends React.Component {
   render() {
@@ -14,10 +14,7 @@ class Admin extends React.Component {
             left: 0
           }}
         >
-          <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
-            <CustomSlider></CustomSlider>
-          </Menu>
+          <CustomSlider></CustomSlider>
         </Sider>
         <Layout style={{ marginLeft: 200 }}>
           <Header style={{ background: "#fff", padding: 0 }} />
@@ -25,7 +22,7 @@ class Admin extends React.Component {
             <div
               style={{ padding: 24, background: "#fff", textAlign: "center" }}
             >
-              content
+            {this.props.children}
             </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>

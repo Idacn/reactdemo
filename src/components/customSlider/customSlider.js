@@ -1,6 +1,6 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
 const { SubMenu } = Menu;
 const root =[
   {
